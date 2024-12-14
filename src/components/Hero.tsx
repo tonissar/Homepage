@@ -3,13 +3,13 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen pt-16 pb-32 overflow-hidden bg-hero-pattern">
+    <div className="relative min-h-[70vh] pt-16 pb-32 overflow-hidden bg-hero-pattern">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-primary/10 to-transparent opacity-30" />
         <div className="absolute inset-0 bg-gradient-to-r from-accent-blue/5 via-accent-purple/10 to-transparent opacity-20" />
       </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center min-h-[calc(100vh-12rem)]">
+        <div className="flex items-center justify-center min-h-[calc(70vh-12rem)]">
           <div className="max-w-3xl mx-auto">
             <div>
               <h1 className="text-3xl md:text-5xl font-display font-bold tracking-tight text-white leading-tight text-center">
