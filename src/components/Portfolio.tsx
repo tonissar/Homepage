@@ -19,7 +19,7 @@ const INITIAL_PROJECTS: Project[] = [
   {
     name: 'Coming Soon',
     description: 'New marketplace launching Q4 2024',
-    image: 'coming-soon.jpeg'
+    image: 'coming-soon.jpg'
   }
 ];
 
