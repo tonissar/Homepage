@@ -21,7 +21,7 @@ export default function Hero() {
               <div className="mt-8 flex justify-center">
                 <a
                   href="#portfolio"
-                  className="inline-flex items-center px-6 py-3 border border-primary/30 shadow-sm text-base font-medium rounded-md text-white bg-dark-lighter hover:bg-dark-accent transition-all duration-300"
+                  className="inline-flex items-center px-6 py-3 rounded-md text-white font-medium bg-gradient-to-r from-primary to-accent-blue hover:from-primary-dark hover:to-accent-blue transition-all duration-300"
                 >
                   View Portfolio
                 </a>
