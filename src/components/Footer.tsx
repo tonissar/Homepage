@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="mt-4 text-gray-400">
             <div className="flex items-center space-x-2 mb-2">
               <Mail className="h-4 w-4" />
-              <span>mail@nissmo.io</span>
+              <span>nahmed@nissmo.io</span>
             </div>
             <div className="flex items-center space-x-2 mb-4">
               <MapPin className="h-4 w-4" />
