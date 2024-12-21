@@ -13,13 +13,13 @@ const INITIAL_PROJECTS: Project[] = [
   {
     name: 'Gulf-AM',
     description: "GCC Region's Best Manufacturers",
-    image: 'gulf-am.jpg',
+    image: '/assets/images/gulf-am.jpg',  // Remove 'src' from path
     link: 'https://gulf-am.com'
   },
   {
     name: 'Coming Soon',
     description: 'New marketplace launching Q4 2024',
-    image: 'coming-soon.jpg'
+    image: '/assets/images/coming.jpg'  // Remove 'src' from path
   }
 ];
 
