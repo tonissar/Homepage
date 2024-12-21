@@ -1,6 +1,6 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+// Remove Supabase import
 
 interface Project {
   name: string;
@@ -8,41 +8,22 @@ interface Project {
   image: string;
   link?: string;
 }
-
 const INITIAL_PROJECTS: Project[] = [
   {
     name: 'Gulf-AM',
     description: "GCC Region's Best Manufacturers",
-    image: 'gulf-am.jpg',
+    image: '/gulf-am.jpg',  // Updated path
     link: 'https://gulf-am.com'
   },
   {
     name: 'Coming Soon',
     description: 'New marketplace launching Q4 2024',
-    image: 'coming-soon.jpg'
+    image: '/coming.jpg'  // Updated path
   }
 ];
-
 export default function Portfolio() {
-  const [projects, setProjects] = React.useState<Project[]>(INITIAL_PROJECTS);
-
-  React.useEffect(() => {
-    async function loadImages() {
-      const updatedProjects = await Promise.all(
-        projects.map(async (project) => {
-          const { data } = supabase.storage
-            .from('website-images')
-            .getPublicUrl(project.image);
-          return {
-            ...project,
-            image: data?.publicUrl || ''
-          };
-        })
-      );
-      setProjects(updatedProjects);
-    }
-    loadImages();
-  }, []);
+  // Remove useState and useEffect since we're using local images directly
+  const projects = INITIAL_PROJECTS;
 
   return (
     <div id="portfolio" className="bg-dark-accent relative">
@@ -60,13 +41,12 @@ export default function Portfolio() {
             Discover how we're transforming industries with our specialized marketplaces
           </p>
         </div>
-
         <div className="mt-12 grid gap-16 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-12">
           {projects.map((project) => (
             <div key={project.name} className="relative">
               <div className="relative w-full h-64 bg-dark rounded-lg overflow-hidden group-hover:opacity-90 transition-opacity duration-300 border border-dark-lighter/20 shadow-xl sm:h-96">
                 <img
-                  src={project.image || ''}
+                  src={project.image}
                   alt={project.name}
                   className="w-full h-full object-center object-cover"
                   loading="lazy"
