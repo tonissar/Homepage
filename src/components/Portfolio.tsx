@@ -10,8 +10,8 @@ interface Project {
 }
 const INITIAL_PROJECTS: Project[] = [
   {
-    name: 'Gulf-AM',
-    description: "GCC Region's Best Manufacturers",
+    name: 'UAEFZONE',
+    description: "Preimer Gatway to UAE business",
     image: '/fzone.jpg',  // Updated path
     link: 'https://uaefzone.com/'
   },
