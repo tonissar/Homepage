@@ -31,7 +31,7 @@ export default function Footer() {
               <MapPin className="h-4 w-4" />
               <span>SRTIP, Sharjah, UAE</span>
             </div>
-            <p className="text-sm">&copy; 2025 Nissmo. All rights reserved.</p>
+            <p className="text-sm">&copy; 2025 nissmo. All rights reserved.</p>
           </div>
         </div>
       </div>
