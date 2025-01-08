@@ -12,12 +12,12 @@ const INITIAL_PROJECTS: Project[] = [
   {
     name: 'Gulf-AM',
     description: "GCC Region's Best Manufacturers",
-    image: '/gulf-am.jpg',  // Updated path
-    link: 'https://gulf-am.com'
+    image: '/fzone.jpg',  // Updated path
+    link: 'https://uaefzone.com/'
   },
   {
     name: 'Coming Soon',
-    description: 'New marketplace launching Q4 2024',
+    description: 'New marketplace launching Q1 2025',
     image: '/coming.jpg'  // Updated path
   }
 ];
