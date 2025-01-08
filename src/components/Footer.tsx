@@ -25,13 +25,13 @@ export default function Footer() {
           <div className="mt-4 text-gray-400">
             <div className="flex items-center space-x-2 mb-2">
               <Mail className="h-4 w-4" />
-              <span>nahmed@nissmo.io</span>
+              <span>mail@nissmo.io</span>
             </div>
             <div className="flex items-center space-x-2 mb-4">
               <MapPin className="h-4 w-4" />
               <span>SRTIP, Sharjah, UAE</span>
             </div>
-            <p className="text-sm">&copy; 2024 Nissmo. All rights reserved.</p>
+            <p className="text-sm">&copy; 2025 Nissmo. All rights reserved.</p>
           </div>
         </div>
       </div>
